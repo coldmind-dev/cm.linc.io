@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"removeComments":                   true,
+		"target":                           "ES2020",
+		"module":                           "CommonJS",
+		"moduleResolution":                 "Node",
+		"strict":                           false,
+		"rootDir":                          "./",
+		"baseUrl":                          "./",
+		"esModuleInterop":                  true,
+		"forceConsistentCasingInFileNames": false,
+
+		"outDir":                           "./_build_",
+		"declaration":                      true,
+		"declarationDir":                   "./_build_",
+
+		"experimentalDecorators":           true,
+		"emitDecoratorMetadata":            true,
+		"paths":                            {
+			"@client/*": [
+				"./src/client/*"
+			],
+			"@server/*":  [
+				"./src/server/*"
+			],
+			"@lib/*":     [
+				"./src/shared/*"
+			]
+		}
+	},
+	"include":         [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"**/cm.process/**"
+	]
+}
+
